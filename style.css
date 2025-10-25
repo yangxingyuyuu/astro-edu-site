@@ -1,0 +1,311 @@
+/* 全局样式 */
+body {
+  font-family: "黑体", "SimHei", sans-serif;
+  background-color: #e6f2ff;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+/* 导航栏 */
+/* 导航栏整体 */
+/* 导航栏整体 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #cce0ff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 左侧 logo 图片 */
+.navbar .logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* 右侧容器：菜单 + 按钮 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 菜单列表 */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* 菜单链接 */
+.nav-links a {
+  text-decoration: none;
+  color: #003366;
+  font-size: 1rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+  color: #3399ff;
+}
+
+/* 语言切换按钮 */
+#lang-btn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #80bfff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#lang-btn:hover {
+  background-color: #66b2ff;
+}
+
+/* -------- 下拉菜单 CSS -------- */
+
+/* 下拉菜单容器 */
+.nav-links li.dropdown {
+  position: relative; /* 相对定位 */
+}
+
+/* 下拉内容 */
+.dropdown-content {
+  display: none; /* 默认隐藏 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #cce0ff;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+/* 下拉内容的每一项 */
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #003366;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content li a:hover {
+  background-color: #99ccff;
+}
+
+/* 鼠标悬停显示下拉菜单 */
+.nav-links li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* 左侧 logo 图片 */
+.navbar .logo img {
+  height: 50px;  /* 根据导航栏高度调整 */
+  width: auto;   /* 保持比例 */
+}
+
+/* 右侧容器：菜单 + 按钮 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;  /* 菜单和按钮间距 */
+}
+
+/* 菜单列表 */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* 菜单链接 */
+.nav-links a {
+  text-decoration: none;
+  color: #003366;
+  font-size: 1rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+  color: #3399ff;
+}
+
+/* 语言切换按钮 */
+#lang-btn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #80bfff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#lang-btn:hover {
+  background-color: #66b2ff;
+}
+
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.banner h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.banner p { font-size: 1.2rem; }
+.navbar .logo img {
+  height: 50px;   /* 根据导航栏高度调整 */
+  width: auto;    /* 保持比例 */
+}
+
+/* 活动卡片 */
+.activity-section { padding: 2rem; text-align: center; }
+.activity-section h2 { margin-bottom: 1.5rem; }
+
+.activity-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #d9ecff;
+  border: 2px dashed #99ccff;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card img { width: 100%; border-radius: 10px; margin-bottom: 0.5rem; }
+.card h3 { margin: 0.5rem 0; }
+.card p { font-size: 0.9rem; margin-bottom: 0.5rem; }
+.card button {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #80bfff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.card button:hover { background-color: #66b2ff; transform: scale(1.05); }
+
+/* 搜索栏 */
+.search-section { text-align: center; padding: 2rem 0; }
+.search-section input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px solid #99ccff;
+  width: 200px;
+}
+.search-section button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #80bfff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 上传入口 */
+.upload-section { text-align: center; padding: 2rem 0; }
+.upload-section button {
+  padding: 0.
+.activity-section {
+  padding: 2rem;
+}
+
+.activity-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.activity-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 宫格排列 */
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #e6f0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.card button {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #80bfff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #66b2ff;
+}
+/* 确保活动详情文字左对齐 */
+.activity-detail {
+  text-align: left !important;
+}
+
+/* 图片容器，强制限制宽度 */
+.img-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* 图片自适应父容器 */
+.teacher-img {
+  display: block;
+  max-width: 100% !important; /* 不超过父容器宽度 */
+  width: 100% !important;     /* 填满父容器 */
+  height: auto !important;    /* 保持比例 */
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  box-sizing: border-box;     /* 确保 padding/margin 不超出 */
+}
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V ASTRO-EDU-SITE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="ASTRO Logo">
+  </div>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#" data-zh="首页" data-en="Home">首页</a></li>
+      <li><a href="#" data-zh="搜索" data-en="Search">搜索</a></li>
+
+      <!-- 分区下拉菜单 -->
+      <li class="dropdown">
+        <a href="#" data-zh="分区" data-en="Series">分区 ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#" data-zh="太阳系" data-en="Solar System">太阳系</a></li>
+          <li><a href="#" data-zh="星座" data-en="Constellation">星座</a></li>
+          <li><a href="#" data-zh="望远镜" data-en="Telescope&Observotory">望远镜</a></li>
+          <li><a href="#" data-zh="系外行星" data-en="Exoplanet">系外行星</a></li>
+          <li><a href="#" data-zh="星系" data-en="Galaxy">星系</a></li>
+           <li><a href="#" data-zh="宇宙" data-en="Cosmos">宇宙</a></li>
+             <!-- 新增八大行星链接 -->
+  <li><a href="planets.html" data-zh="八大行星" data-en="Planets">八大行星</a></li>
+</ul>
+        </ul>
+      </li>
+
+      <li><a href="#" data-zh="上传活动" data-en="Upload">上传方案</a></li>
+      <li><a href="#" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+    </ul>
+
+    <button id="lang-btn">EN</button>
+  </div>
+</nav>
+
+
+  <!-- Banner -->
+  <header class="banner">
+    <h1 data-zh="欢迎进入天文工作坊！" data-en="Welcome to the Astro Workshop!">
+      欢迎进入天文工作坊！
+    </h1>
+    <p data-zh="用宇宙关联一切，让天文活动更有趣！" data-en="Connect everything with the cosmos and make astronomy fun!">
+      用宇宙关联一切，让天文活动更有趣！
+    </p>
+  </header>
+
+  <!-- 推荐活动 -->
+  <section class="activity-section">
+    <h2 data-zh="推荐天文活动方案" data-en="Recommended Astronomy Activities">
+      推荐天文活动方案
+    </h2>
+    <div class="activity-cards">
+      <!-- 生成 25 张卡片示例 -->
+      <!-- 可根据需要替换图片 src 和文本 -->
+      <!-- 这里生成前 5 张示例，其他可复制粘贴改名字 -->
+      <div class="card">
+        <img src="images/activity1.png" alt="活动1">
+        <h3 data-zh="小小天文家" data-en="Little Astronomer">小小天文家</h3>
+        <p data-zh="通过望远镜观察月球和星星，认识夜空奥秘。" 
+           data-en="Observe the moon and stars with a telescope to explore the night sky.">
+          通过望远镜观察月球和星星，认识夜空奥秘。
+        </p>
+        <button data-zh="查看详情" data-en="View Details">查看详情</button>
+      </div>
+      <div class="card">
+        <img src="images/activity2.png" alt="活动2">
+        <h3 data-zh="星座探秘" data-en="Constellation Explorer">星座探秘</h3>
+        <p data-zh="带孩子们认星座，了解星空故事与传说。" 
+           data-en="Teach children to identify constellations and learn star stories.">
+          带孩子们认星座，了解星空故事与传说。
+        </p>
+        <button data-zh="查看详情" data-en="View Details">查看详情</button>
+      </div>
+      <div class="card">
+        <img src="images/activity3.png" alt="活动3">
+        <h3 data-zh="自制日晷" data-en="DIY Sundial">自制日晷</h3>
+        <p data-zh="动手制作日晷，理解时间与太阳的关系。" 
+           data-en="Make a sundial to understand the relation of time and sun.">
+          动手制作日晷，理解时间与太阳的关系。
+        </p>
+        <button data-zh="查看详情" data-en="View Details">查看详情</button>
+      </div>
+      <div class="card">
+        <img src="images/activity4.png" alt="活动4">
+        <h3 data-zh="月球观测" data-en="Moon Observation">月球观测</h3>
+        <p data-zh="通过望远镜观察月球地貌。" data-en="Observe the lunar surface with a telescope.">
+          通过望远镜观察月球地貌。
+        </p>
+        <button data-zh="查看详情" data-en="View Details">查看详情</button>
+      </div>
+      <div class="card">
+        <img src="images/activity5.png" alt="活动5">
+        <h3 data-zh="太阳探秘" data-en="Sun Exploration">太阳探秘</h3>
+        <p data-zh="安全观察太阳活动和黑子。" data-en="Safely observe solar activity and sunspots.">
+          安全观察太阳活动和黑子。
+        </p>
+        <button data-zh="查看详情" data-en="View Details">查看详情</button>
+      </div>
+      <!-- 可以复制以上 card，生成到 25 张 -->
+    </div>
+  </section>
+
+  <!-- 搜索栏 -->
+  <section class="search-section">
+    <input type="text" placeholder="搜索活动主题">
+    <button data-zh="搜索" data-en="Search">搜索</button>
+  </section>
+
+  <!-- 上传入口 -->
+  <section class="upload-section">
+    <h2 data-zh="分享你的活动方案 ✨" data-en="Share Your Activity Plan ✨">分享你的活动方案 ✨</h2>
+    <button data-zh="上传方案" data-en="Upload Plan">上传方案</button>
+  </section>
+
+  <!-- 关于我们 -->
+  <section class="about-section">
+    <h2 data-zh="关于我们" data-en="About Us">关于我们</h2>
+    <p data-zh="AstroEdu 是一个为教师提供天文活动方案的平台，让课堂更有趣、更互动。"
+       data-en="AstroEdu is a platform that provides teachers with astronomy activity plans to make classes more fun and interactive.">
+      AstroEdu 是一个为教师提供天文活动方案的平台，让课堂更有趣、更互动。
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

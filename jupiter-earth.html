@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>木星与地球对比 | V ASTRO-EDU-SITE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- 活动详情页面专用样式 ---------- */
+    body {
+      font-family: 'Shadows Into Light', cursive;
+      margin: 0;
+      padding: 0;
+    }
+
+    .activity-detail {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #f0f8ff;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .activity-detail h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+
+    .activity-section {
+      margin: 1.5rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 2px dashed #80bfff;
+    }
+
+    .activity-section:last-child {
+      border-bottom: none;
+    }
+
+    .activity-section h3 {
+      color: #0059b3;
+      margin-bottom: 0.5rem;
+    }
+
+    .activity-section p, .activity-section li {
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .activity-section ul, .activity-section ol {
+      margin-left: 1.5rem;
+    }
+
+    .activity-section ol {
+      list-style-type: decimal;
+    }
+
+    /* 图片自适应 */
+    .img-container {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0.5rem 0;
+    }
+
+    .teacher-img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    /* 下载按钮 */
+    .download-link {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem 0;
+      background-color: #80bfff;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .download-link:hover {
+      background-color: #66b2ff;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="ASTRO Logo" style="height:50px;">
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+        <li><a href="#" data-zh="搜索" data-en="Search">搜索</a></li>
+        <li class="dropdown">
+          <a href="#" data-zh="分区" data-en="Series">分区 ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="#" data-zh="太阳系" data-en="Solar System">太阳系</a></li>
+            <li><a href="#" data-zh="星座" data-en="Constellation">星座</a></li>
+            <li><a href="#" data-zh="望远镜" data-en="Telescope&Observatory">望远镜</a></li>
+            <li><a href="#" data-zh="系外行星" data-en="Exoplanet">系外行星</a></li>
+            <li><a href="#" data-zh="星系" data-en="Galaxy">星系</a></li>
+            <li><a href="#" data-zh="宇宙" data-en="Cosmos">宇宙</a></li>
+            <li><a href="planets.html" data-zh="八大行星" data-en="Planets">八大行星</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-zh="上传活动" data-en="Upload">上传方案</a></li>
+        <li><a href="#" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+      </ul>
+      <button id="lang-btn">EN</button>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="banner">
+    <h1>木星与地球对比</h1>
+    <p>探索太阳系中体积最大的行星木星与地球的差异</p>
+  </header>
+
+  <!-- 活动详情 -->
+  <section class="activity-detail">
+
+    <!-- 活动基本信息 -->
+    <div class="activity-section">
+      <h3>适宜年级：小学一至三年级</h3>
+      <h3>活动难度：⭐⭐（难度较低）</h3>
+      <h3>活动时长：40分钟</h3>
+    </div>
+
+    <!-- 活动目标 -->
+    <div class="activity-section">
+      <h3>活动目标</h3>
+      <ol>
+        <li>理解木星与地球的体积差异</li>
+        <li>掌握比例与模型制作方法</li>
+        <li>激发学生对太阳系探索的兴趣</li>
+      </ol>
+    </div>
+
+    <!-- 教师前置知识 -->
+    <div class="activity-section">
+      <h3>教师前置知识</h3>
+      <p>
+        木星是太阳系中体积最大、质量最大的行星之一，属于气态巨行星。
+        它的直径约 1.43 × 10⁸ m，体积约 1.43 × 10¹⁸ m³（约地球的1,321倍），质量约 1.90 × 10²⁷ kg（约地球的318倍）。
+        木星自转仅约 9.9 小时，造成赤道隆起。它位于火星和土星之间，拥有80多颗已知卫星，包括四颗伽利略卫星，并有微弱环系，其大气呈带状云系，著名的大红斑风暴尤为显眼。
+      </p>
+      <div class="img-container">
+        <img src="jupiter.jpg" alt="木星示意图" class="teacher-img">
+      </div>
+    </div>
+
+    <!-- 所需材料 -->
+    <div class="activity-section">
+      <h3>所需材料</h3>
+      <ol>
+        <li>木星和地球模型或球体</li>
+        <li>尺子或量角器</li>
+        <li>卡纸、彩笔</li>
+        <li>投影仪或图片资料（可选）</li>
+      </ol>
+    </div>
+
+    <!-- 操作步骤 -->
+    <div class="activity-section">
+      <h3>操作步骤</h3>
+      <ol>
+        <li>准备木星和地球模型或球体，确保比例大致正确。</li>
+        <li>让学生观察两颗行星的大小差异，讨论体积和直径。</li>
+        <li>使用尺子测量模型尺寸，并计算体积比例。</li>
+        <li>通过投影或图片展示真实行星数据，进行对比。</li>
+        <li>学生在卡纸上画出木星与地球的比例图，加深印象。</li>
+        <li>讨论实验发现及原因。</li>
+      </ol>
+    </div>
+
+    <!-- 可下载资源 -->
+    <div class="activity-section">
+      <h3>可下载资源</h3>
+      <a href="resources/planet-template.pdf" class="download-link" download>行星比例模板 PDF</a><br>
+      <a href="resources/solar-system-ppt.pptx" class="download-link" download>太阳系PPT</a>
+    </div>
+
+  </section>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>八大行星 | V ASTRO-EDU-SITE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="ASTRO Logo">
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+        <li><a href="#" data-zh="搜索" data-en="Search">搜索</a></li>
+        <li class="dropdown">
+          <a href="#" data-zh="分区" data-en="Series">分区 ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="#" data-zh="太阳系" data-en="Solar System">太阳系</a></li>
+            <li><a href="#" data-zh="星座" data-en="Constellation">星座</a></li>
+            <li><a href="#" data-zh="望远镜" data-en="Telescope&Observatory">望远镜</a></li>
+            <li><a href="#" data-zh="系外行星" data-en="Exoplanet">系外行星</a></li>
+            <li><a href="#" data-zh="星系" data-en="Galaxy">星系</a></li>
+            <li><a href="#" data-zh="宇宙" data-en="Cosmos">宇宙</a></li>
+            <li><a href="planets.html" data-zh="八大行星" data-en="Planets">八大行星</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-zh="上传活动" data-en="Upload">上传方案</a></li>
+        <li><a href="#" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+      </ul>
+      <button id="lang-btn">EN</button>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="banner">
+    <h1>关于八大行星</h1>
+    <p>有趣的活动方案在这里！</p>
+  </header>
+
+  <!-- 活动卡片展示 -->
+  <section class="activity-section">
+    <h2>八大行星活动方案</h2>
+    <div class="activity-cards">
+      <!-- 示例卡片 -->
+      <div class="card">
+        <img src="Saturn and earth.png" alt="水星活动">
+        <h3>对比｜木星与地球体积</h3>
+        <p>可视化八大行星中体积最大的木星</p>
+        <a href="jupiter-earth.html">
+            <button>查看详情</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="images/venus.png" alt="金星活动">
+        <h3>金星大冒险</h3>
+        <p>了解金星的温室效应与大气环境，制作小实验。</p>
+        <button>查看详情</button>
+      </div>
+
+      <div class="card">
+        <img src="images/earth.png" alt="地球活动">
+        <h3>地球观察</h3>
+        <p>观察地球的昼夜和季节变化，制作地球模型。</p>
+        <button>查看详情</button>
+      </div>
+
+      <div class="card">
+        <img src="images/mars.png" alt="火星活动">
+        <h3>火星探险</h3>
+        <p>制作火星地形模型，了解火星探测器任务。</p>
+        <button>查看详情</button>
+      </div>
+
+      <div class="card">
+        <img src="images/jupiter.png" alt="木星活动">
+        <h3>木星风暴</h3>
+        <p>通过实验模拟木星风暴和大红斑。</p>
+        <button>查看详情</button>
+      </div>
+
+      <div class="card">
+        <img src="images/saturn.png" alt="土星活动">
+        <h3>土星环制作</h3>
+        <p>动手制作土星环模型，理解环的结构与成因。</p>
+        <button>查看详情</button>
+      </div>
+
+      <div class="card">
+        <img src="images/uranus.png" alt="天王星活动">
+        <h3>天王星旋转</h3>
+        <p>学习天王星的独特自转轴，制作旋转演示模型。</p>
+        <button>查看详情</button>
+      </div>
+
+      <div class="card">
+        <img src="images/neptune.png" alt="海王星活动">
+        <h3>海王星风暴</h3>
+        <p>了解海王星的风暴和大气环境，观看模拟动画。</p>
+        <button>查看详情</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
